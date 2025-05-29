@@ -2,7 +2,7 @@ import React from 'react'
 import Formulario from '../components/Formulario'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import "../assets/styles/Contacto.css"
+import "../assets/styles/contacto.css"
 const Contacto = ({carritoSuma}) => {
   return (
       <div>
