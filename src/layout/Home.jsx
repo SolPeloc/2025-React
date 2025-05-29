@@ -1,7 +1,6 @@
 import React, { useEffect, useState} from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Main from '../components/Main'
 import ListaProductos from '../components/ListaProductos'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons'

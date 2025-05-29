@@ -1,6 +1,6 @@
 import React from 'react'
 import Boton from './Boton'
-import Tarjetas from './tarjetas'
+import Tarjetas from './Tarjetas'
 import { Link } from 'react-router-dom'
 
 const Producto = ({producto, agregarACarrito,color,texto}) => {
