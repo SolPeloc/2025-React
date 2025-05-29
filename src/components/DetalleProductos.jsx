@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import Tarjetas from './tarjetas'
+import Tarjetas from './Tarjetas'
 import "../assets/styles/tarjetas.css"
 import Boton from './Boton'
 import Header from './Header'
