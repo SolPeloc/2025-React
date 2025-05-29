@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import fc from "../assets/images/fc.png"
-import ig from "../assets/images/ig.png"
+
 import "../assets/styles/footer.css" 
 
 const Footer = () => {
@@ -17,8 +16,8 @@ const Footer = () => {
       <div className='containerRedes'> 
        <p>Redes Sociales: </p>
                         <div>
-                            <a href="https://www.facebook.com/ATIAMULTIMARCA"> <img  src={fc} className="iconoStyle traslate"alt="face" style={{ width: "30px" }}/></a>
-                            <a href="https://www.instagram.com/atia_multimarca/"><img  src={ig}className="iconoStyle traslate " alt="ig"style={{ width: "30px" }}/></a>
+                            <a href="https://www.facebook.com/ATIAMULTIMARCA"> <img  src="/images/fc.png" className="iconoStyle traslate"alt="face" style={{ width: "30px" }}/></a>
+                            <a href="https://www.instagram.com/atia_multimarca/"><img  src="/images/ig.png"className="iconoStyle traslate " alt="ig"style={{ width: "30px" }}/></a>
                         </div>
         </div>
     </footer>

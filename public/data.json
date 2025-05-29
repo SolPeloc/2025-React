@@ -4,7 +4,7 @@
     "nombre": "Remera White",
     "descripción": "algodón 100 %, liso",
     "precio": 15000,
-    "img": "/src/assets/images/remeralisa1e.jpg",
+    "img": "/images/remeralisa1e.jpg",
     "tipo": "lisa"
   },
   {
@@ -12,7 +12,7 @@
     "nombre": "Remera Rose",
     "descripción": "algodón 100 %, liso color rosa",
     "precio": 15000,
-    "img": "/src/assets/images/remeralisa2.jpg",
+    "img": "/images/remeralisa2.jpg",
     "tipo": "lisa"
   },
   {
@@ -20,7 +20,7 @@
     "nombre": "Remera Red",
     "descripción": "algodón 100 %, liso color rojo",
     "precio": 15000,
-    "img": "/src/assets/images/remeralisa3.jpg",
+    "img": "/images/remeralisa3.jpg",
     "tipo": "lisa"
   },
   {
@@ -28,7 +28,7 @@
     "nombre": "Remera Goku",
     "descripción": "algodón 100 %, estampado",
     "precio": 15000,
-    "img": "/src/assets/images/remeraestampada3.jpg",
+    "img": "/images/remeraestampada3.jpg",
     "tipo": "estampada"
   },
   {
@@ -36,7 +36,7 @@
     "nombre": "Remera Z Duo",
     "descripción": "algodón 100 %, estampado",
     "precio": 20000,
-    "img": "/src/assets/images/remeraestampada4.jpg",
+    "img": "/images/remeraestampada4.jpg",
     "tipo": "estampada"
   },
   {
@@ -44,7 +44,7 @@
     "nombre": "Remera Graffi",
     "descripción": "algodón 100 %, estampado",
     "precio": 20000,
-    "img": "/src/assets/images/remeraestampada5.jpg",
+    "img": "/images/remeraestampada5.jpg",
     "tipo": "estampada"
   },
   {
@@ -52,7 +52,7 @@
     "nombre": "Remera Yellow",
     "descripción": "algodón 100 %, estampado",
     "precio": 20000,
-    "img": "/src/assets/images/remeraestampada6.jpg",
+    "img": "/images/remeraestampada6.jpg",
     "tipo": "estampada"
   },
   {
@@ -60,7 +60,7 @@
     "nombre": "Remera Guns",
     "descripción": "algodón 100 %, estampado",
     "precio": 20000,
-    "img": "/src/assets/images/remeraestampada7.jpg",
+    "img": "/images/remeraestampada7.jpg",
     "tipo": "estampada"
   },
   {
@@ -68,7 +68,7 @@
     "nombre": "Remera Grey",
     "descripción": "algodón 100 %, estampado",
     "precio": 20000,
-    "img": "/src/assets/images/remeraestampada8.jpg",
+    "img": "/images/remeraestampada8.jpg",
     "tipo": "estampada"
   }
 ]
