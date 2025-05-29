@@ -1,0 +1,36 @@
+nav{
+  padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  nav li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  ul,
+  li,
+  a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: #3a4a5a;
+  }
+  
+  .carritoSuma{
+    background-color: #554f5f;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: 5px;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+  }

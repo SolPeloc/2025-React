@@ -1,0 +1,25 @@
+footer{
+    margin:15px
+
+}
+.containerLinks{
+    display: flex;
+    align-items: center;
+}
+.containerLinks ul{
+    margin: 15px;
+}
+.containerLinks li a{
+text-decoration: underline;
+padding: 5px;
+}
+
+.containerRedes{
+    display: flex;
+    align-items: center;
+   
+}
+
+.containerRedes div a{
+    margin: 5px;
+}

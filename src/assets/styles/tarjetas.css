@@ -1,0 +1,59 @@
+.containerTarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%; /**/
+    height: auto;
+}
+
+.estiloTarjeta{
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.estiloTarjeta:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.estiloTarjeta h2{
+     text-align: center;
+     padding: 5px;
+}
+.estiloTarjeta img{
+    width: 200px;
+    max-width: fit-content;
+}
+
+ .estiloTarjeta .imgDetalle{
+  width: 400px;
+  margin: 0 auto;
+}
+.TarjetaDetalle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.TarjetaDetalle h2{
+    text-align: center;
+    padding: 10px;
+}
+.TarjetaDetalle img{
+    width: 300px;
+    height: auto;
+    margin: 10px 0;
+}

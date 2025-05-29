@@ -1,0 +1,60 @@
+.containerCarrito{
+        width: 90%;
+        margin:15px;
+        overflow: hidden;
+        min-height: 400px;
+        
+}
+.containerCarrito h2{
+    text-align: center;
+    color: #554f5f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+} 
+.productosCarrito{
+    background: #ddd9d9;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /*para que no se salga de la caja*/
+}
+.producto{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+.productoDetalle{
+    flex-grow: 1; /*ocupa todo el espacio disponible*/
+    margin: 15px;
+}
+.productoControl{
+    display: flex;
+    align-items: center;
+}
+.btnSuma{
+    background: #554f5f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.inputCantidad{
+    width: 30px;
+    text-align: center;
+    padding: 4px;
+    margin: 5px;
+    border: none;
+}
+.btn{
+    background: #554f5f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
