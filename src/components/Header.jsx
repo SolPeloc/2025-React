@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "../assets/styles/header.css"
 import Nav from './Nav'
-const Header = ({carritoSuma}) => {
+const Header = () => {
+ 
   return (
     <header>
         <div>
-           <Nav carritoSuma={carritoSuma}/>
+           <Nav/>
         </div>
     </header>
   )

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Boton from './Boton'
 import Tarjetas from './Tarjetas'
 import { Link } from 'react-router-dom'
-
-const Producto = ({producto, agregarACarrito,color,texto}) => {
+import { CarritoContext } from '../context/CartContex'
+const Producto = ({color, texto, producto}) => {
   
+const {manejarAgregarCarrito: agregarACarrito}= useContext(CarritoContext) /*Esto es una desestructuración con renombramiento en JavaScript. Lo que estás haciendo es extraer manejarAgregarCarrito del contexto, pero asignarle un nuevo nombre (agregarACarrito) dentro del archivo.
+ */
+//
   return (
     <div className='estiloTarjeta'>
         <Tarjetas
@@ -23,3 +26,6 @@ const Producto = ({producto, agregarACarrito,color,texto}) => {
 }
 
 export default Producto
+/* Estás intentando extraer { producto } de useContext(CarritoContext), pero el contexto no almacena un solo producto, sino un array de productos.
+❌ producto debería venir como prop desde ListaProductos, porque ListaProductos mapea los productos de la tienda.
+ */

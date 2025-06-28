@@ -90,3 +90,10 @@ h1{
   min-height: 400px;
   margin: 15px;
 }
+:root {
+  --toastify-color-success: #3a4a5a; /* Cambia el color base del toast de éxito */
+  --toastify-icon-color-success: #3a4a5a; /* Cambia el color de la tilde */
+  --toastify-color-info: #3a4a55;
+  --toastify-color-error: red;
+  --toastify-icon-color-error:red;
+}
