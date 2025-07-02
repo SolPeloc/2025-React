@@ -106,8 +106,7 @@ h1{
 @media (max-width: 768px) {
   .acordeon {
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+   
   }
  nav ul li{
   padding: 15px;

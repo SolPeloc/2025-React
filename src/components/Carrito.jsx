@@ -40,8 +40,8 @@ const {carrito: itemsCarrito,manejarSuma,manejarResta,eliminarProducto, vaciarCa
                         <div>
                             <h3>Total carrito:</h3>
                             <span>${itemsCarrito.reduce((acumulador, item) => acumulador + (item.precio * item.cantidad), 0)}</span> 
-                            <div> 
-                            <button className= "btn" onClick={()=>vaciarCarrito(itemsCarrito)}>Vaciar carrito</button>
+                            <div > 
+                            <button className= "btn" onClick={()=>vaciarCarrito(itemsCarrito)}  style={{ marginRight: '10px' }}>Vaciar carrito</button>
                             <button className= "btn" onClick={finalizarCompra}>Finalizar compra</button>
                             </div>
                         </div>
