@@ -5,8 +5,13 @@ import Header from './Header'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons' 
 import { CarritoContext } from '../context/CartContex'
+
+
 const Carrito = () => {
-  const {carrito: itemsCarrito,manejarSuma,manejarResta,eliminarProducto, vaciarCarrito}= useContext(CarritoContext)
+const {carrito: itemsCarrito,manejarSuma,manejarResta,eliminarProducto, vaciarCarrito,finalizarCompra}= useContext(CarritoContext)
+ 
+
+  
   return (
     <> 
         <Header/>
@@ -35,7 +40,10 @@ const Carrito = () => {
                         <div>
                             <h3>Total carrito:</h3>
                             <span>${itemsCarrito.reduce((acumulador, item) => acumulador + (item.precio * item.cantidad), 0)}</span> 
-                            <button className= "btn" onClick={()=>vaciarCarrito(itemsCarrito)}>vaciarCarrito</button>
+                            <div> 
+                            <button className= "btn" onClick={()=>vaciarCarrito(itemsCarrito)}>Vaciar carrito</button>
+                            <button className= "btn" onClick={finalizarCompra}>Finalizar compra</button>
+                            </div>
                         </div>
                     </div>
                 )}
@@ -43,7 +51,7 @@ const Carrito = () => {
         <Footer/>
     </>);
 };
-
+//1.14- clase 12. 13- 14 15
 
 
 export default Carrito

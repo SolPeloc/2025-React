@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRightToBracket, faCircleUser } from '@fortawesome/free-solid-svg-icons'
+import { faRightToBracket, faCircleUser, faCircleNotch} from '@fortawesome/free-solid-svg-icons'
 import FormularioProducto from '../components/FormularioProducto'
 import FormularioEditar from '../components/FormularioEditar'
 import { useNavigate } from 'react-router-dom'
@@ -8,7 +8,7 @@ import {AuthContext} from "../context/AuthContext"
 import { Link } from 'react-router-dom'
 import { ProductoContext } from '../context/ProductoContext'
 const Admin = () => {
-  const{productos,eliminarProducto,editarProducto,onAgregar} = useContext(ProductoContext)
+  const{productos,eliminarProducto,editarProducto,onAgregar,cargando} = useContext(ProductoContext)
   const [abrirForm, setAbrirForm] = useState(null) 
   const [productoAEditar, setProductoAEditar] = useState(null) 
   const navigate = useNavigate()
@@ -24,8 +24,11 @@ const Admin = () => {
   };
   return (
           <div>
-                {autenticacion ? ( 
-                  <nav style={{backgroundColor:"#3333"}}> 
+            {cargando ? (
+              <div className='spinerContainer'><FontAwesomeIcon icon={faCircleNotch} className="fa-spin" size='4x'/></div>
+            ) :(  
+             autenticacion ? ( 
+                  <nav style={{backgroundColor:"#3333"}} className='navAdm'> 
                     <ul>
                       <li>
                           <button
@@ -37,9 +40,9 @@ const Admin = () => {
                         <Link to="/admin"> <FontAwesomeIcon icon={faCircleUser}/></Link>
                       </li>
                     </ul>
-                  </nav> ) : (<> 
+                  </nav> )  : (<> 
                 <Link to="/login"> <FontAwesomeIcon icon={faRightToBracket}/></Link>  
-            </>)}
+            </>))}
             <div style={{textAlign:"center", margin:"10px"}}> 
               <h1>Bienvenido administrador</h1>
               <p>Panel de productos</p>

@@ -90,10 +90,27 @@ h1{
   min-height: 400px;
   margin: 15px;
 }
+.navAdm{
+  display: flex;
+  justify-content: space-evenly;
+}
 :root {
   --toastify-color-success: #3a4a5a; /* Cambia el color base del toast de éxito */
   --toastify-icon-color-success: #3a4a5a; /* Cambia el color de la tilde */
   --toastify-color-info: #3a4a55;
   --toastify-color-error: red;
   --toastify-icon-color-error:red;
+}
+
+/*breakpoints*/
+@media (max-width: 768px) {
+  .acordeon {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ nav ul li{
+  padding: 15px;
+  text-align: left;
+ }
 }

@@ -5,7 +5,7 @@ export const ProductoContext = createContext()
 export const ProductoProvider = ({children}) => {
 
 const [productos, setProductos] = useState([])
-
+const [cargando,setCargando] = useState(true)
   //const [productoAEditar, setProductoAEditar] = useState(null) 
 const apiUrl = "https://68227dd0b342dce8004e5e70.mockapi.io/productos-ecommerce/productos"
   //funcion que se encarga de agregar un nuevo producto al array de productos,
@@ -20,7 +20,11 @@ const apiUrl = "https://68227dd0b342dce8004e5e70.mockapi.io/productos-ecommerce/
   //trabajamos con asincronia asi que usamos async/await,
 
   useEffect(() => {
-   traerProductos()//
+    setTimeout(() => {
+                  traerProductos()//
+                   setCargando(false);// lo agrego?
+                }, 2000);
+   
   
 }, [apiUrl]);//
 
@@ -32,7 +36,6 @@ const traerProductos = async() =>{
       const data = await respuesta.json()
       setProductos(data)
     }catch (error){
-      alert("error cargar los producto"+ error.message)
       toast.error(`Error al cargar los productos: ${error.message}`)
     }
 }
@@ -63,11 +66,9 @@ const eliminarProducto = async(id,nombre) =>{
             method: "DELETE"
             })
             if(!respuesta.ok) throw  Error ("Error al eliminar el producto")
-            alert("Producto Eliminado")
             toast.info(`${nombre} fue eliminado`)
             traerProductos()
           }catch (error){
-            alert("error al eliminar el producto"+ error.message)
             toast.error(`hubo un error al eliminar producto :${nombre}`)
           } 
       }
@@ -81,10 +82,8 @@ const eliminarProducto = async(id,nombre) =>{
           })
             if(!respuesta.ok)   throw new Error("error al modificar el producto")
             await  traerProductos()
-            alert("Producto modificado")
             toast.success(`${producto.nombre} se ha modificado`)
         }catch(error){
-          alert("error al modificar el producto" + error.message)
           toast.error(`error al modificar: ${producto.nombre}`)
         }
   }
@@ -93,7 +92,8 @@ const eliminarProducto = async(id,nombre) =>{
               { productos,
                 onAgregar,
                 editarProducto,
-                eliminarProducto
+                eliminarProducto,
+                cargando,
               }
             }>
       {children}      
