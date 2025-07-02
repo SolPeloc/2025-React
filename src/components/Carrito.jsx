@@ -51,7 +51,7 @@ const {carrito: itemsCarrito,manejarSuma,manejarResta,eliminarProducto, vaciarCa
         <Footer/>
     </>);
 };
-//1.14- clase 12. 13- 14 15
+
 
 
 export default Carrito

@@ -1,6 +1,7 @@
 import React,{use, useState} from 'react'
 import { useContext } from 'react'
 import { AuthContext } from '../context/AuthContext'
+import { Link } from 'react-router-dom'
 const Login = () => {
 
 const{email, setEmail, password, setPassword,error, manejoEnvioForm} = useContext(AuthContext)
@@ -34,6 +35,7 @@ const{email, setEmail, password, setPassword,error, manejoEnvioForm} = useContex
           </div>
           <div className='containerBtn'> 
             <button type='submit' className='btn'>Iniciar Sesión</button> {/*- El botón de tipo submit, envía el formulario cuando se hace clic en él. */}
+             <button type='submit' className='btn'><Link to={"/"} style={{color:'white'}}>Volver a la Home</Link></button> 
           </div>
         </form>
       </div>

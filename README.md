@@ -26,10 +26,11 @@ If you are developing a production application, we recommend using TypeScript an
 ## Dependencias:
 -REACT ROUTER DOM (npm i react-router-dom)
 se puede poner en el main y que envuelva el componente principal, app.jsx
-o
-directamente en el componente app.jsx
+o directamente en el componente app.jsx
 para que sea escalable, mejor poner en el main:
 importamos el routes y lo envolvemos en app.
+-Fontawesome(biblioteca de iconos)
+-react-toastify(biblioteca para notificaciones)
 
 
 ## Deploy:
